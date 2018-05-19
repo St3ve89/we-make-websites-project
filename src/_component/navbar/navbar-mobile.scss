@@ -6,6 +6,7 @@
 }
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -16,6 +17,7 @@
 }
 
 .navbar__action-list {
+
   display: flex;
 }
 
@@ -26,4 +28,17 @@
   &:not(:last-child) {
     display: none;
   }
+}
+
+.navbar__menu-list {
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__menu {
+  padding: 10px;
+  text-transform: uppercase;
+  color: $color-san-juan;
 }
