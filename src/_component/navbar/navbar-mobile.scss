@@ -12,7 +12,9 @@
 }
 
 .navbar__drawer {
+  cursor: pointer;
   order: -1;
+  font-size: 1.6rem;
   padding: 20px;
 }
 
@@ -35,10 +37,20 @@
   top: 60px;
   display: flex;
   flex-direction: column;
+  left: -100%;
 }
 
 .navbar__menu {
   padding: 10px;
   text-transform: uppercase;
   color: $color-san-juan;
+}
+
+#anything-you-want:checked + .navbar__menu-list {
+  left: 0%;
+  transition: 0.3s;
+} 
+
+#anything-you-want {
+  display: none;
 }
