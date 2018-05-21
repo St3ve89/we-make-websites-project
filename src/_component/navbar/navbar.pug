@@ -32,11 +32,25 @@
   .navbar__action-list
     -
       const actionList = [
-        'search',
-        'profile',
-        'heart',
-        'bag'
+        {
+          label:'search',
+          dropDown: false
+        },
+        {
+          label:'profile',
+          dropDown: false
+        },
+        {
+          label:'heart',
+          dropDown: false
+        },
+        {
+          label:'bag',
+          dropDown: true
+        }
       ]
     each action in actionList
       .navbar__action
-        span(class=`wmw-${action}`)
+        span(class=`wmw-${action.label}`)
+        if action.dropDown
+          include ../cart/cart

@@ -1,0 +1,17 @@
+.cart__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.cart__item-list-wrapper {
+  display: flex;
+}
+
+.cart__item-list {
+  flex-direction: column;
+}

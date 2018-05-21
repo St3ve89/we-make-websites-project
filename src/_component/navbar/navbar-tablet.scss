@@ -1,9 +1,13 @@
 @media screen and (min-width: 768px) {
   .navbar__action {
     font-size: 1.6rem;
-    padding: 20px 10px;
+    padding: 20px 3px;
   
     &:not(:last-child) {
+      display: inherit;
+    }
+
+    &:hover .dropdown {
       display: inherit;
     }
   }
@@ -23,5 +27,9 @@
     &:hover .box {
       display: inherit;
     }
+  }
+
+  .navbar__action-list {
+    padding-right: 1rem;
   }
 } 
