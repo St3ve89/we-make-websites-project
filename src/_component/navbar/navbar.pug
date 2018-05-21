@@ -7,13 +7,28 @@
   .navbar__menu-list
     -
       const menuList = [
-        'home',
-        'collection',
-        'logbook',
-        'about'
+        {
+          label: 'home',
+          subMenu: false
+        },
+        {
+          label: 'collection',
+          subMenu: true
+        },
+        {
+          label: 'logbook',
+          subMenu: true
+        },
+        {
+          label: 'about',
+          subMenu: false
+        }
       ]
     each menu in menuList
-      .navbar__menu=menu
+      .navbar__menu
+        span=menu.label
+        if menu.subMenu
+          include ../submenu/submenu
   .navbar__action-list
     -
       const actionList = [
