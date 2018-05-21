@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   text-transform: uppercase;
+
 }
 
 .announce__button {
@@ -35,4 +36,9 @@
   text-align: center;
   padding: 10px 20px;
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 19px;
+  color: #191919;
 }

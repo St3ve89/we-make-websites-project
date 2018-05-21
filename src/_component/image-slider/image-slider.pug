@@ -1,0 +1,18 @@
+.image-slider
+  .image-slider__dot-list
+    -
+      const dotList=[
+        'a',
+        'b',
+        'c'
+      ]
+    each dot, key in dotList
+      input(type='radio' class='image-slider__dot-selector' name='nameForDots'
+      checked=key === 0
+      id=`idForDots-${key}`)
+    each dot, key in dotList
+      label.image-slider__dot(for=`idForDots-${key}`)
+    .image-slider__content-wrapper-list
+      .image-slider__content-wrapper
+        each dot, key in dotList
+          .image-slider__content=key
