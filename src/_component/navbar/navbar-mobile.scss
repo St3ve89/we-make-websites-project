@@ -34,10 +34,14 @@
 
 .navbar__menu-list {
   position: absolute;
+  font-size: 16px;
   top: 60px;
   display: flex;
   flex-direction: column;
   left: -100%;
+  color: #2D4966;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .navbar__menu {

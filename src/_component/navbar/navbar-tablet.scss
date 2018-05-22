@@ -1,4 +1,9 @@
 @media screen and (min-width: 768px) {
+  .navbar{
+    height: 120px;
+    align-items: center;
+  }
+
   .navbar__action {
     font-size: 1.6rem;
     padding: 20px 3px;
@@ -23,6 +28,7 @@
 
   .navbar__menu {
     padding: 20px 10px;
+    margin: 50px;
 
     &:hover .box {
       display: inherit;
@@ -30,6 +36,10 @@
   }
 
   .navbar__action-list {
-    padding-right: 1rem;
+    margin-right: 4rem;
+  }
+
+  .navbar__logo {
+    margin-left: 4rem;
   }
 } 
