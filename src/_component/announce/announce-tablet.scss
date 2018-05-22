@@ -4,15 +4,15 @@
    }
 
    .announce__bottom {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background-color: transparent;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     //  make the container ignore mouse events
     // like you can click through it
@@ -21,5 +21,13 @@
 
    .announce__button{
      background-color: transparent;
+   }
+
+   .announce__button-list {
+    margin-left: 4rem;
+   }
+
+   .announce__drop-down {
+    margin-right: 4rem;
    }
 }
