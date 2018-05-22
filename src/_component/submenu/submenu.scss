@@ -3,5 +3,13 @@
 }
 
 .sub-menu__item {
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  line-height: 21px;
+}
+
+.sub-menu__image {
+  border: 100px solid #eaeaea;
+  margin: 2rem;
 }
