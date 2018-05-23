@@ -1,6 +1,6 @@
 .image-slider {
   height: 672px;
-  background: url(/asset/image/Background.jpg);
+  background: url(asset/image/Background.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -22,7 +22,8 @@
   height: 14px;
   background-color: $color-nobel;
   position: relative;
-  
+  margin: 5px;
+
   &:after {
     content: "";
     position: absolute;
